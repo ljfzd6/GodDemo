@@ -9,17 +9,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GodUser {
-    Integer id,age;
-    String username,password,name;
+    private Integer id,age;
+    private String username,password,name,phone,address,email;
 
     @Override
     public String toString() {
-        return "User{" +
+        return "GodUser{" +
                 "id=" + id +
                 ", age=" + age +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

@@ -7,6 +7,10 @@ import java.util.List;
 
 @Service
 public interface UserService {
-public List<GodUser> getAllUser();
-public GodUser getUserByUsername(String Username);
+List<GodUser> getAllUser();
+GodUser getUserByUsername(String Username);
+boolean  updateUser(GodUser godUser);
+boolean updatePassword(String password,String username);
+boolean deleteuser(String username);
+boolean adduser(GodUser godUser);
 }

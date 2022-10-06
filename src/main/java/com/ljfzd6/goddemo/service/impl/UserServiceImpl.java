@@ -21,4 +21,24 @@ public class UserServiceImpl implements UserService {
     public GodUser getUserByUsername(String username) {
         return userMapper.selectUserByUsername(username);
     }
+
+    @Override
+    public boolean updateUser(GodUser godUser) {
+        return userMapper.updateUserById(godUser);
+    }
+
+    @Override
+    public boolean updatePassword(String password, String username) {
+        return userMapper.updatePasswordByUsername(password,username);
+    }
+
+    @Override
+    public boolean deleteuser(String username) {
+        return userMapper.deleteUserByUsername(username);
+    }
+
+    @Override
+    public boolean adduser(GodUser godUser) {
+        return userMapper.insertuser(godUser);
+    }
 }
